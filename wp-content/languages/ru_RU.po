@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 6.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2022-06-29 16:02:59+0000\n"
+"PO-Revision-Date: 2022-05-14 21:01:01+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -284,18 +284,6 @@ msgstr "Январь"
 #, gp-priority: high
 msgid "Uncategorized"
 msgstr "Без рубрики"
-
-#: wp-includes/option.php:2250
-msgid "The ID of the page that should display the latest posts"
-msgstr "ID страницы, на которой должны отображаться последние записи"
-
-#: wp-includes/option.php:2240
-msgid "The ID of the page that should be displayed on the front page"
-msgstr "ID страницы, которая должна отображаться на главной странице"
-
-#: wp-includes/option.php:2230
-msgid "What to show on the front page"
-msgstr "Что показать на главной странице"
 
 #. translators: 1: PHP file name, 2: Version number.
 #: wp-includes/functions.php:5575
@@ -5246,7 +5234,7 @@ msgstr "В ответ на %s."
 msgid "Previous and next months"
 msgstr "Предыдущий и следующий месяцы"
 
-#: wp-includes/option.php:2353
+#: wp-includes/option.php:2322
 msgid "When registering an \"array\" setting to show in the REST API, you must specify the schema for each array item in \"show_in_rest.schema.items\"."
 msgstr "При регистрации метатипа \"массив\" для отображения через REST API вы должны указать схему для каждого элемента массива в \"show_in_rest.schema.items\"."
 
@@ -5804,7 +5792,7 @@ msgstr "Предварительный просмотр вложения"
 msgid "Your browser cannot upload files"
 msgstr "Ваш браузер не может загружать файлы"
 
-#: wp-includes/class-wp-xmlrpc-server.php:658 wp-includes/option.php:2278
+#: wp-includes/class-wp-xmlrpc-server.php:658 wp-includes/option.php:2247
 msgid "Allow people to submit comments on new posts."
 msgstr "Разрешить оставлять комментарии к новым записям."
 
@@ -8491,7 +8479,7 @@ msgid "Featured image"
 msgstr "Изображение записи"
 
 #. translators: 1: $sanitize_callback, 2: register_setting()
-#: wp-includes/option.php:2471
+#: wp-includes/option.php:2440
 msgid "%1$s is deprecated. The callback from %2$s is used instead."
 msgstr "%1$s устарело. Вместо этого используйте обратный вызов %2$s."
 
@@ -8618,7 +8606,7 @@ msgstr[2] "Ваша тема имеет %s других областей для 
 msgid "Your theme has 1 other widget area, but this particular page does not display it."
 msgstr "Ваша тема имеет одну другую область для виджетов, но эта страница не показывает ее."
 
-#: wp-includes/option.php:2122
+#: wp-includes/option.php:2121
 msgid "This address is used for admin purposes, like new user notification."
 msgstr "Этот адрес используется в целях администрирования. Например, для уведомления о новых пользователях."
 
@@ -8813,11 +8801,11 @@ msgstr "Описание вложения."
 msgid "The attachment caption."
 msgstr "Подпись вложения."
 
-#: wp-includes/option.php:2199
+#: wp-includes/option.php:2198
 msgid "Default post category."
 msgstr "Рубрика для записей по умолчанию."
 
-#: wp-includes/option.php:2089
+#: wp-includes/option.php:2088
 msgid "Site tagline."
 msgstr "Слоган сайта."
 
@@ -10114,50 +10102,50 @@ msgstr "%1$s %2$s, %3$s назад (%4$s)"
 
 #. translators: %s: misc
 #. translators: %s: privacy
-#: wp-includes/option.php:2366 wp-includes/option.php:2379
-#: wp-includes/option.php:2439 wp-includes/option.php:2452
+#: wp-includes/option.php:2335 wp-includes/option.php:2348
+#: wp-includes/option.php:2408 wp-includes/option.php:2421
 #: wp-admin/includes/template.php:1575 wp-admin/includes/template.php:1588
 #: wp-admin/includes/template.php:1646 wp-admin/includes/template.php:1659
 msgid "The \"%s\" options group has been removed. Use another settings group."
 msgstr "Группа настроек \"%s\" была удалена. Используйте другую группу настроек."
 
-#: wp-includes/option.php:2264
+#: wp-includes/option.php:2233
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new articles."
 msgstr "Разрешить ссылки оповещения с других блогов (уведомления и обратные ссылки) на новые статьи."
 
-#: wp-includes/option.php:2219
+#: wp-includes/option.php:2218
 msgid "Blog pages show at most."
 msgstr "Максимум страниц блога для показа."
 
-#: wp-includes/option.php:2209
+#: wp-includes/option.php:2208
 msgid "Default post format."
 msgstr "Формат записей по умолчанию."
 
-#: wp-includes/option.php:2188
+#: wp-includes/option.php:2187
 msgid "Convert emoticons like :-) and :-P to graphics on display."
 msgstr "Преобразовывать смайлики наподобие :-) и :-P в картинки при показе."
 
-#: wp-includes/option.php:2177
+#: wp-includes/option.php:2176
 msgid "WordPress locale code."
 msgstr "Код локали WordPress."
 
-#: wp-includes/option.php:2165
+#: wp-includes/option.php:2164
 msgid "A day number of the week that the week should start on."
 msgstr "Первый день недели."
 
-#: wp-includes/option.php:2155
+#: wp-includes/option.php:2154
 msgid "A time format for all time strings."
 msgstr "Общий формат времени."
 
-#: wp-includes/option.php:2145
+#: wp-includes/option.php:2144
 msgid "A date format for all date strings."
 msgstr "Общий формат даты."
 
-#: wp-includes/option.php:2135
+#: wp-includes/option.php:2134
 msgid "A city in the same timezone as you."
 msgstr "Город в той же временной зоне что и у вас."
 
-#: wp-includes/option.php:2077
+#: wp-includes/option.php:2076
 msgid "Site title."
 msgstr "Название сайта."
 
@@ -15824,7 +15812,7 @@ msgstr "Извините, чтобы просматривать метки, ва
 msgid "Site Tagline"
 msgstr "Краткое описание"
 
-#: wp-includes/option.php:2105
+#: wp-includes/option.php:2104
 msgid "Site URL."
 msgstr "Адрес сайта (URL)"
 
