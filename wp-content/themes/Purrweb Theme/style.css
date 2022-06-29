@@ -1,0 +1,93 @@
+/* 
+Theme Name: Purrweb Theme
+*
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+h2 {
+    font-size: 32px;
+    text-align: center;
+}
+.page__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (min-width: 730px) {
+    .page__wrapper {
+        flex-direction: row;
+    }
+}
+main {
+    flex: 75%;
+    background-color: lightcyan;
+}
+.cards__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.cards__wrapper > .card {
+    border: 1px solid rgb(235, 235, 235);
+    display: flex;
+    /* max-width: 300px; */
+    flex-direction: column;
+    flex: 25%;
+    margin: 1em .5em;
+}
+.card .card-image {
+    max-width: 100%;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    flex: 50%;
+}
+.card > .card-content {
+    padding: 10px;
+    margin-top: auto;
+    justify-self: flex-end;
+}
+.card > .card-content > div {
+    margin: .5em 0;
+}
+.card > .card-content > .card-name {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.card > .card-content > .card-price {
+    font-weight: bold;
+    font-size: 18px;
+}
+.card > .card-content > .card-price::after {
+    content: ' руб.';
+}
+.card > .card-content > .card-button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 162, 162);
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: auto;
+    border-radius: 5px;
+    width: 100%;
+}
+.card > .card-content > .card-button:hover {
+    opacity: .9;
+}
+
+.sidebar {
+    flex: 25%;
+    background-color: lightyellow;
+}
