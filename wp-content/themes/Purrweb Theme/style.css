@@ -46,12 +46,15 @@ main {
     flex: 25%;
     margin: 1em .5em;
 }
-.card .card-image {
+.card > .card-image {
     max-width: 100%;
     align-self: center;
     display: flex;
     align-items: center;
     flex: 50%;
+}
+.card-image > img {
+    border-radius: 10px;
 }
 .card > .card-content {
     padding: 10px;
