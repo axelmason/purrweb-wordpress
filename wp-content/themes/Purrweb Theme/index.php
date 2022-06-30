@@ -32,6 +32,9 @@
             endif; ?>
         </div>
     </main>
-    <?php the_widget('Foo_Widget'); ?>
+    <section class="sidebar">
+        <h2 style="margin-bottom: 1em;">Дополнительная информация</h2>
+    <?php dynamic_sidebar('right-sidebar-widget'); ?>
+    </section>
 </div>
 <?php get_footer(); ?>

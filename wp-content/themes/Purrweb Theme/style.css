@@ -3,7 +3,11 @@ Theme Name: Purrweb Theme
 *
 */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
 body {
+    font-family: 'Epilogue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,11 +16,17 @@ body {
     overflow-x: hidden;
 }
 h1 {
+    margin: 0;
+    padding: 10px 0;
+    height: 45px;
     font-size: 40px;
     text-align: center;
 }
 h2 {
-    font-size: 32px;
+    margin: 0;
+    padding: 10px 0;
+    height: 45px;
+    font-size: 28px;
     text-align: center;
 }
 .page__wrapper {
@@ -24,9 +34,24 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
+.cards__wrapper > .card {
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(141, 141, 141, 0.2);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(141, 141, 141, 0.2);
+    box-shadow: 0px 0px 10px 2px rgba(141, 141, 141, 0.2);
+    display: flex;
+    flex-direction: column;
+    flex: 33%;
+    margin: 1em 1em;
+    max-width: 100%;
+}
+
 @media screen and (min-width: 730px) {
     .page__wrapper {
         flex-direction: row;
+    }
+    .cards__wrapper > .card {
+        max-width: 300px;
     }
 }
 main {
@@ -38,20 +63,16 @@ main {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.cards__wrapper > .card {
-    border: 1px solid rgb(235, 235, 235);
-    display: flex;
-    /* max-width: 300px; */
-    flex-direction: column;
-    flex: 25%;
-    margin: 1em .5em;
-}
 .card > .card-image {
+    padding: 1em 0;
     max-width: 100%;
     align-self: center;
     display: flex;
     align-items: center;
     flex: 50%;
+}
+.card-content{
+    text-align: center;
 }
 .card-image > img {
     border-radius: 10px;
@@ -79,12 +100,12 @@ main {
     cursor: pointer;
     outline: none;
     border: none;
-    background-color: rgb(255, 162, 162);
+    background-color: #89fafb;
     padding: 10px 20px;
     font-size: 20px;
     margin-top: auto;
     border-radius: 5px;
-    width: 100%;
+    width: 75%;
 }
 .card > .card-content > .card-button:hover {
     opacity: .9;

@@ -49,8 +49,8 @@ class Foo_Widget extends WP_Widget {
     public function __construct() {
         parent::__construct(
             'side-widget', // Base ID
-            'side-widget', // Name
-            array( 'description' => __( 'side-widget', 'text_domain' ), ) // Args
+            '3 последние записи', // Name
+            array( 'description' => __( '3 последние записи', 'text_domain' ), ) // Args
         );
     }
  
@@ -63,8 +63,7 @@ class Foo_Widget extends WP_Widget {
      * @param array $instance Saved values from database.
      */
     public function widget( $args, $instance ) { ?>
-    <section class="sidebar">
-        <h1>Все товары</h1>
+        <h2>Последние добавленные</h2>
         <div class="cards__wrapper">
             <?php
             $posts = get_posts([
@@ -95,7 +94,6 @@ class Foo_Widget extends WP_Widget {
             <?php endforeach;
             endif; ?>
         </div>
-    </section>
     <?php }
  
     /**
@@ -106,19 +104,11 @@ class Foo_Widget extends WP_Widget {
      * @param array $instance Previously saved values from database.
      */
     public function form( $instance ) {
-        if ( isset( $instance[ 'count' ] ) ) {
-            $count = $instance[ 'count' ];
-        }
-        else {
-            $count = 3;
-        }
         ?>
         <p>
-            <?php print_r($count); ?>
-            <label for="<?php echo $this->get_field_name( 'count' ); ?>"><?php _e( 'Count:' ); ?></label>
-            <input class="widefat" id="<?php echo $this->get_field_id( 'count' ); ?>" name="<?php echo $this->get_field_name( 'count' ); ?>" type="number" value="<?php echo esc_attr( $count ); ?>" />
-         </p>
-    <?php
+            Удалите чтобы убрать виджет
+        </p>
+        <?php
     }
  
     /**
@@ -133,7 +123,6 @@ class Foo_Widget extends WP_Widget {
      */
     public function update( $new_instance, $old_instance ) {
         $instance = array();
-        $instance['count'] = ( !empty( $new_instance['count'] ) ) ? strip_tags( $new_instance['count'] ) : '';
  
         return $instance;
     }
@@ -147,3 +136,10 @@ add_action( 'widgets_init', 'register_foo' );
 function register_foo() { 
     register_widget( 'Foo_Widget' ); 
 }
+
+// Registration sidebar
+register_sidebar( array(
+    'name' => __( 'Сайдбар справа', 'Purrweb Theme' ),
+    'id' => 'right-sidebar-widget',
+    'description' => __( 'Сайдбар справа', 'Purrweb Theme' )
+    ) );
